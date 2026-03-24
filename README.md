@@ -1,7 +1,5 @@
 # ☕ Maery Coffee
 
-🌐 **Sitio web:** [maerycoffee.github.io](https://maerycoffee.github.io)
-
 Marca de café de especialidad originaria de **Chinchao, Huánuco, Perú**. Producida por la familia Trinidad Martel a más de 1800 metros sobre el nivel del mar.
 
 ---
@@ -44,6 +42,7 @@ Café de producción familiar cultivado en parcelas independientes a más de 160
 
 - 📸 Instagram: [@maerycoffee](https://www.instagram.com/maerycoffee/)
 - 📱 WhatsApp: 940612537 / 958191656
+- 🌐 **Sitio web:** [maerycoffee.github.io](https://maerycoffee.github.io)
 
 ---
 
