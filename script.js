@@ -41,3 +41,12 @@ window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   nav.style.boxShadow = window.scrollY > 20 ? '0 1px 20px rgba(0,0,0,.08)' : 'none';
 });
+
+const video = document.querySelector('video');
+const videoObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { video.play(); } 
+    else { video.pause(); }
+  });
+}, { threshold: 0.3 });
+videoObserver.observe(video);
