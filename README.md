@@ -1,73 +1,47 @@
-# Maery Coffee — Sitio Web
+# ☕ Maery Coffee
 
-Landing page de una sola página para **Maery Coffee**, presentando el café de especialidad de la Finca "De La Cruz" (Los Mellizos, Villa Rica — Oxapampa, Perú).
+**Café de Especialidad de Villa Rica**
+Los Mellizos, Villa Rica — Oxapampa, Perú
 
-Sitio estático hecho en HTML, CSS y JavaScript vanilla, sin frameworks ni proceso de build.
+---
 
-## 🚀 Demo local
+## El Café
 
-No requiere instalación ni dependencias. Simplemente abre `index.html` en tu navegador, o levanta un servidor local:
+Un blend de especialidad cultivado a **1500 msnm** en Los Mellizos, anexo de Villa Rica (Oxapampa), dentro de la Reserva de Biosfera Oxapampa-Asháninka-Yánesha. El microclima de la selva central peruana le da a este café su carácter distintivo.
 
-```bash
-# Con Python
-python3 -m http.server 8000
+| | |
+|---|---|
+| **Especie** | Arábica |
+| **Variedades** | Blend de Caturra, Típica y Catuaí |
+| **Altitud** | 1500 m.s.n.m |
+| **Zona de producción** | Los Mellizos / Villa Rica / Oxapampa |
+| **Humedad** | 11% – 11.5% |
+| **Color** | Homogéneo |
+| **Olor** | Fresco |
 
-# Con Node (npx)
-npx serve .
-```
+## Proceso
 
-Luego visita `http://localhost:8000`.
+Blend lavado con medición de grados brix. La cosecha selecciona únicamente granos maduros, que luego pasan por flote y zaranda para asegurar uniformidad.
 
-## 📁 Estructura del proyecto
+- **48 horas** de fermentación en fruta
+- **36 horas** adicionales de fermentación ya despulpado
+- **7 días** de secado solar en invernadero
+- Almacenado en bolsa GrainPro
 
-```
-├── index.html          # Estructura y contenido de la página
-├── style.css            # Estilos (paleta, tipografía, animaciones, responsive)
-├── script.js             # Interactividad (scroll reveal, contador de cantidad, botón WhatsApp, autoplay del video)
-├── logo.png              # Logo de Maery Coffee
-├── Foto1.jpeg             # Entrada a la Finca "De La Cruz"
-├── foto_granos.jpeg        # Café verde secándose
-├── Foto3.jpeg               # Secado solar en invernadero
-├── Sabino.jpg                 # Foto de cosecha en la parcela (sección Historia)
-└── Video.mp4                   # Video de cerezas de café en la rama (sección Galería)
-```
+## Perfil sensorial
 
-## ✏️ Cómo editar el contenido
+Fragancia y aroma a **frutos secos** con toques deshidratados, sobre una base de **chocolate** con fondo a **canela**. En taza: notas de **naranja y lima**, acidez media, cuerpo terso y un final frutal prolongado. Taza limpia.
 
-Todo el contenido vive directamente en `index.html`, dividido por secciones con comentarios (`<!-- HERO -->`, `<!-- ABOUT -->`, `<!-- STORY -->`, `<!-- GALLERY -->`, `<!-- BUY -->`, etc.). No hay CMS ni datos externos: se edita el HTML a mano.
+## La familia detrás del café
 
-### Número de WhatsApp
+**De La Cruz Café** nació en 2021 como un proyecto familiar de **Sabino De La Cruz** y su esposa **Paulina Montoya**, en Los Mellizos, Villa Rica. Sabino lleva más de 20 años dedicado al cultivo responsable del café en la zona.
 
-El botón "Pedir por WhatsApp" arma el enlace dinámicamente en `script.js`. Para cambiar el número de contacto:
+El proyecto surgió en un momento difícil: la roya amarilla afectó buena parte de las parcelas de café de la región, y los precios bajos tampoco ayudaban. En lugar de rendirse, la familia decidió aprovechar al máximo las variedades que ya tenían sembradas —Caturra, Típica y Catuaí— y así nació el blend que hoy los caracteriza.
 
-```js
-// script.js, línea ~26
-const phone = '51940612537'; // ← REEMPLAZA con tu número de WhatsApp
-```
+## Contacto y pedidos
 
-### Reemplazar imágenes o video
+Los pedidos se coordinan directamente por WhatsApp, con envíos a todo el Perú.
 
-Basta con sustituir el archivo manteniendo el mismo nombre, o cambiar el nombre y actualizar el `src` correspondiente en `index.html`.
+---
 
-## 🎨 Stack
-
-- HTML5 semántico
-- CSS puro (variables CSS, grid, flexbox, animaciones con `IntersectionObserver`)
-- JavaScript vanilla (sin dependencias)
-- Fuentes: [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) y [DM Sans](https://fonts.google.com/specimen/DM+Sans) vía Google Fonts
-
-## 📦 Despliegue
-
-Al ser un sitio 100% estático, se puede desplegar directamente en:
-
-- **GitHub Pages** — activa Pages en la configuración del repo apuntando a la rama `main` (o `gh-pages`), carpeta raíz `/`.
-- **Netlify / Vercel** — arrastra la carpeta o conecta el repositorio; no requiere comando de build.
-- Cualquier hosting estático (S3, Cloudflare Pages, etc.)
-
-## ℹ️ Sobre el contenido
-
-La información técnica del café (origen, altitud, proceso, variedades, humedad, notas de cata) proviene de la ficha técnica oficial de la Finca De La Cruz. La historia de Sabino De La Cruz y Paulina Montoya está basada en información pública verificada de la Cámara de Turismo de Villa Rica ([turismovillarica.pe](https://turismovillarica.pe/de_la_cruz_cafe/)).
-
-## 📄 Licencia
-
-Todos los derechos reservados © Maery Coffee. Las fotografías y videos son propiedad de sus respectivos autores.
+*Información técnica del café según ficha técnica oficial de la Finca De La Cruz. Historia familiar basada en información pública de la Cámara de Turismo de Villa Rica ([turismovillarica.pe](https://turismovillarica.pe/de_la_cruz_cafe/)).*
