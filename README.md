@@ -1,49 +1,73 @@
-# ☕ Maery Coffee
+# Maery Coffee — Sitio Web
 
-Marca de café de especialidad originaria de **Chinchao, Huánuco, Perú**. Producida por la familia Trinidad Martel a más de 1800 metros sobre el nivel del mar.
+Landing page de una sola página para **Maery Coffee**, presentando el café de especialidad de la Finca "De La Cruz" (Los Mellizos, Villa Rica — Oxapampa, Perú).
 
----
+Sitio estático hecho en HTML, CSS y JavaScript vanilla, sin frameworks ni proceso de build.
 
-## Sobre el producto
+## 🚀 Demo local
 
-| Dato | Valor |
-|------|-------|
-| Variedad | Geisha |
-| Proceso | Lavado |
-| Origen | Chinchao, Huánuco — Perú |
-| Finca | Tres Hermanas |
-| Productor | Helder Trinidad Martel |
-| Altitud | 1800 msnm |
-| Puntaje de taza | 86.08 |
-| Humedad | 9.20% |
-| Rendimiento físico | 75.32% |
-| Reconocimiento | CONCAFES 2021 |
+No requiere instalación ni dependencias. Simplemente abre `index.html` en tu navegador, o levanta un servidor local:
 
----
+```bash
+# Con Python
+python3 -m http.server 8000
 
-## Perfil de sabor
+# Con Node (npx)
+npx serve .
+```
 
-- 🌸 Floral ligero
-- 🍮 Caramelo
-- 🌿 Hierba luisa
-- 🍇 Frutos deshidratados
-- ✨ Postgusto dulce delicado
-- 🍯 Acidez melosa y cuerpo sedoso
+Luego visita `http://localhost:8000`.
 
----
+## 📁 Estructura del proyecto
 
-## Historia
+```
+├── index.html          # Estructura y contenido de la página
+├── style.css            # Estilos (paleta, tipografía, animaciones, responsive)
+├── script.js             # Interactividad (scroll reveal, contador de cantidad, botón WhatsApp, autoplay del video)
+├── logo.png              # Logo de Maery Coffee
+├── Foto1.jpeg             # Entrada a la Finca "De La Cruz"
+├── foto_granos.jpeg        # Café verde secándose
+├── Foto3.jpeg               # Secado solar en invernadero
+├── Sabino.jpg                 # Foto de cosecha en la parcela (sección Historia)
+└── Video.mp4                   # Video de cerezas de café en la rama (sección Galería)
+```
 
-Café de producción familiar cultivado en parcelas independientes a más de 1600 msnm en Chinchao, Huánuco. Cada fruto es seleccionado y cosechado a mano con dedicación y trabajo artesanal. En 2021 fue reconocido en **CONCAFES** como uno de los mejores cafés del Alto Huallaga.
+## ✏️ Cómo editar el contenido
 
----
+Todo el contenido vive directamente en `index.html`, dividido por secciones con comentarios (`<!-- HERO -->`, `<!-- ABOUT -->`, `<!-- STORY -->`, `<!-- GALLERY -->`, `<!-- BUY -->`, etc.). No hay CMS ni datos externos: se edita el HTML a mano.
 
-## Contacto
+### Número de WhatsApp
 
-- 📸 Instagram: [@maerycoffee](https://www.instagram.com/maerycoffee/)
-- 📱 WhatsApp: 940612537 / 958191656
-- 🌐 **Sitio web:** [maerycoffee.github.io](https://maerycoffee.github.io)
+El botón "Pedir por WhatsApp" arma el enlace dinámicamente en `script.js`. Para cambiar el número de contacto:
 
----
+```js
+// script.js, línea ~26
+const phone = '51940612537'; // ← REEMPLAZA con tu número de WhatsApp
+```
 
-*El café es vida, el café tiene historia — Maery Coffee © 2024*
+### Reemplazar imágenes o video
+
+Basta con sustituir el archivo manteniendo el mismo nombre, o cambiar el nombre y actualizar el `src` correspondiente en `index.html`.
+
+## 🎨 Stack
+
+- HTML5 semántico
+- CSS puro (variables CSS, grid, flexbox, animaciones con `IntersectionObserver`)
+- JavaScript vanilla (sin dependencias)
+- Fuentes: [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) y [DM Sans](https://fonts.google.com/specimen/DM+Sans) vía Google Fonts
+
+## 📦 Despliegue
+
+Al ser un sitio 100% estático, se puede desplegar directamente en:
+
+- **GitHub Pages** — activa Pages en la configuración del repo apuntando a la rama `main` (o `gh-pages`), carpeta raíz `/`.
+- **Netlify / Vercel** — arrastra la carpeta o conecta el repositorio; no requiere comando de build.
+- Cualquier hosting estático (S3, Cloudflare Pages, etc.)
+
+## ℹ️ Sobre el contenido
+
+La información técnica del café (origen, altitud, proceso, variedades, humedad, notas de cata) proviene de la ficha técnica oficial de la Finca De La Cruz. La historia de Sabino De La Cruz y Paulina Montoya está basada en información pública verificada de la Cámara de Turismo de Villa Rica ([turismovillarica.pe](https://turismovillarica.pe/de_la_cruz_cafe/)).
+
+## 📄 Licencia
+
+Todos los derechos reservados © Maery Coffee. Las fotografías y videos son propiedad de sus respectivos autores.

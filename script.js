@@ -23,10 +23,10 @@ function updateSummary() {
 }
 
 function updateWA(qty) {
-  const phone = '51958191656'; // ← REEMPLAZA con tu número de WhatsApp
+  const phone = '51940612537'; // ← REEMPLAZA con tu número de WhatsApp
   const msg = encodeURIComponent(
     `Hola, quiero comprar café Maery Coffee ☕\n` +
-    `Producto: Café Geisha\n` +
+    `Producto: Blend Villa Rica (Caturra, Típica y Catuaí)\n` +
     `Cantidad: ${qty} paquete${qty > 1 ? 's' : ''}\n\n` +
     `¿Podría darme más información sobre el precio y el envío?`
   );
